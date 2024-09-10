@@ -16,11 +16,31 @@ body {
   padding: 5px;
 }
 h2 {
+  font-size: 28px;
   font-weight: 900;
 }
 p {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 900;
+  padding-bottom: 2px;
+}
+.small {
+  font-size: 11px;
+  font-weight: 900;
+}
+.grid4 p {
+  font-size: 10px;
+  font-weight: 900;
+}
+.gridBot p {
+  font-size: 10px;
+  font-weight: 900;
+}
+.heading {
+  font-size: 11px;
+}
+.alignEnd {
+  align-items: end;
 }
 
 .lineH12 {
@@ -47,50 +67,85 @@ p {
   display: flex;
   justify-content: space-between;
   margin: 0 0 0 20px;
-  /* border-top: 1px solid black; */
-  /* border: 1px solid red; */
+  border-top: 1px solid black;
 }
-/* .nutrition {
-  align-items: flex-end;
-  height: 40px;
-} */
+.grid_sub p {
+  /* border: 1px solid red; */
+
+  margin: 0 3px;
+  min-width: 50px;
+}
+.grid_sub p:nth-child(1) {
+  flex: 3;
+}
+.grid_sub p:nth-child(2) {
+  text-align: end;
+  flex: 0.8;
+}
+
+.grid_sub p:nth-child(3) {
+  text-align: end;
+  flex: 0.8;
+}
 .grid {
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid black;
   /* border: 1px solid red; */
 }
 .grid p {
-  /* border: 1px solid red; */
-  font-size: 12px;
+  /* border: 1px solid blue; */
   margin: 0 3px;
   min-width: 50px;
-  /* display: block; */
-}
-/* .nutrition p {
-  font-size: 10px;
-  margin: 0 3px;
-} */
-.textAligne-end {
-  text-align: end;
 }
 
 .grid p:nth-child(1) {
-  /* text-align: end; */
-  /* border: 1px solid red; */
   flex: 3;
 }
 .grid p:nth-child(2) {
   text-align: end;
-  /* border: 1px solid red; */
   flex: 0.8;
 }
 
 .grid p:nth-child(3) {
   text-align: end;
-  /* border: 1px solid red; */
   flex: 0.8;
 }
+.grid4 {
+  display: flex;
+  justify-content: space-between;
+  /* border-top: 1px solid black; */
+}
+.grid4 p:nth-child(1) {
+  flex: 2;
+  /* border: 1px solid red; */
+}
+.grid4 p:nth-child(2) {
+  flex: 1;
+  /* border: 1px solid red; */
+}
 
+.grid4 p:nth-child(3) {
+  flex: 1;
+  /* border: 1px solid red; */
+}
+.grid4 p:nth-child(4) {
+  flex: 1;
+  /* border: 1px solid red; */
+}
+
+.gridBot {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+/* .gridBot p {
+  border: 1px solid red;
+} */
+
+.textAligne-end {
+  text-align: end;
+}
 .flex08 {
   flex: 0.8;
 }
